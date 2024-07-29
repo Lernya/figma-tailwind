@@ -3,25 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Figma-Tailwind-CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-        <header>
           <!-- G -->
-          <div class="logo"></div>
-          <nav></nav>
-          <nav>
-            <div class="suche"></div>
-            <div class="profil"></div>
-            <button></button>
-          </nav>
-        </header>
-    
+          <header class="flex justify-center p-4 text-[#2B1B12] font-bold text-lg bg-[#FEF7F2] font-montserrat">           
+              <div class="p-6"><img src="logo.png" alt="logo"></div>
+              <nav>
+                <ul class="flex justify-center text-[#2B1B12] font-bold font-montserrat text-lg p-7">
+                  <li><a href="#" class="hover:bg-[#DDC7BB] 600 p-4">Home</a></li>
+                  <li><a href="#" class="hover:bg-[#DDC7BB] 600 p-4">Service</a></li>
+                  <li><a href="#" class="hover:bg-[#DDC7BB] 600 p-4">Agents</a></li>
+                  <li><a href="#" class="hover:bg-[#DDC7BB] 600 p-4">Contact</a></li>
+                </ul>
+              </nav>
+            <nav>
+              <ul class="flex justify-end p-4 text-[#2B1B12] font-bold font-montserrat text-lg">
+                <li><a href="#" class="p-20"><img src="search.svg" alt="Search"></a></li>
+                <li><a href="#" class="p-20"><img src="user.svg" alt="User"></a></li>
+                <li><a href="#" class="p-20"><button class="bg-[#2B1B12] text-white p-2 rounded hover:bg-[#DDC7BB]">Sign up</button></li>
+              </ul>
+            </nav>   
+          </header>
+          
         <main>
-            <h1>Figma-Tailwind-CSS</h1>
-            <section>
+            <h1></h1>
+            <section class="flex font-montserrat p-4 text-[#2B1B12] font-bold text-lg bg-[#FEF7F2]">
             <!-- Section 1 Haupthaus  G -->
+             <Div>
+              <p class="flex font-montserrat p-4 text-6xl">Find Your <br>
+                Dream Home
+              </p>
+
+              <p class="flex font-montserrat p-4">
+                Explore our curated selection of exquisite <br>
+                properties metisculously tailored to your <br>
+                unique dream home vision
+              </p>
+              <div class="flex font-montserrat p-4">
+                <a href="#"><img src="Rectangle 1.png" alt="SignUpButton"></a>
+              </div>
+              <div class="flex font-montserrat p-4  justify-end place-content-end">
+                Image Big House
+              </div>
+             </Div>
           </section>
     
           <section>
