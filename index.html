@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @tailwind base; /* Preflight will be injected here */
+       /* @tailwind base; */ /* Preflight will be injected here, siehe https://tailwindcss.com/docs/preflight */
     </style>
     <title>Figma-Tailwind-CSS</title>
   </head>
@@ -43,8 +43,10 @@
             <!-- Section 5 Our popular residences L -->
           </section>
     
-          <section>
+          <section class="bg-red-50">
+
             <!-- Section 6 What people say about us  I -->
+            <h2>What People Say About Dwello</h2>
           </section>
     
           <section>
