@@ -5,62 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-       /* @tailwind base; */ /* Preflight will be injected here, siehe https://tailwindcss.com/docs/preflight */
+      /* @tailwind base; */ /* Preflight will be injected here, siehe https://tailwindcss.com/docs/preflight */
     </style>
     <title>Figma-Tailwind-CSS</title>
   </head>
   <body>
-        <header>
-          <!-- G -->
-          <div class="logo"></div>
-          <nav></nav>
-          <nav>
-            <div class="suche"></div>
-            <div class="profil"></div>
-            <button></button>
-          </nav>
-        </header>
-    
-        <main>
-            <h1>Figma-Tailwind-CSS</h1>
-            <section>
-            <!-- Section 1 Haupthaus  G -->
-          </section>
-    
-          <section>
-            <!-- Section 2 Immobiliensuche, Filter G -->
-          </section>
-    
-          <section>
-            <!-- Section 3 We help you to find.. L -->
-          </section>
-    
-          <section>
-            <!-- Section 4 Why choose us (inkl. Kaestchen) L -->
-          </section>
-    
-          <section>
-            <!-- Section 5 Our popular residences L -->
-          </section>
-    
-          <section class="bg-red-50">
+    <header>
+      <!-- G -->
+      <div class="logo"></div>
+      <nav></nav>
+      <nav>
+        <div class="suche"></div>
+        <div class="profil"></div>
+        <button></button>
+      </nav>
+    </header>
 
-            <!-- Section 6 What people say about us  I -->
-            <h2>What People Say About Dwello</h2>
-          </section>
-    
-          <section>
-            <!-- Section 7 Do you have any questions? I -->
-          </section>
-        </main>
-    
-        <footer>
-          <!-- I -->
-        </footer>
-      </body>
-    </html>
+    <main>
+      <!-- <h1 class="text-center">Figma-Tailwind-CSS</h1> -->
+      <section>
+        <!-- Section 1 Haupthaus  G -->
+      </section>
+
+      <section>
+        <!-- Section 2 Immobiliensuche, Filter G -->
+      </section>
+
+      <section class="font-montserrat p-4">
+        <!-- Section 3 We help you to find.. L -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 bg-teal-100 gap-4">
+          <div id="grid-feld-a1" class="box-border">
+            <!-- <p>Mit Bildplatzhalter funktioniert es, mit Klassen in img direkt bisher nicht</p> -->
+            <!-- <img class="rounded-md bg-teal-200" src="figma/figma-luxury_and_rich_home_exterior_side_view.png" alt="House"></div> -->
+
+            <div class="rounded-md bg-teal-200">
+              <img
+                src="figma/figma-luxury_and_rich_home_exterior_side_view.png"
+                alt="House"
+              />
+            </div>
+          </div>
+
+          <div id="grid-feldb1" class="bg-teal-200 box-border">
+            <h2 class="text-left text-xl font-bold font-bold">
+              We Help You To Find Your Dream Home
+            </h2>
+            <p>
+              From cozy cottages to luxurious estates, our dedicated team guides you
+              through every step of the journey, ensuring your dream home becomes a
+              reality
+            </p>
+
+            <div class="flex gap-4">
+              <!-- Dann in li -->
+              <p><strong>8K+</strong> Houses Available</p>
+              <p><strong>6K+</strong> Houses Sold</p>
+              <p><strong>2K+</strong> Trusted Agents</p>
+            </div>
+            <!-- Ende flex xK+     -->
+          </div>
+          <!-- Ende grid-feldb1-->
+        </div>
+        <!-- Ende flex section -->
+      </section>
+
+      <section class="font-montserrat p-4">
+        <!-- Section 4 Why choose us (inkl. Kaestchen) L -->
+        <h2 class="text-center text-xl font-bold font-bold">Why Choose Us</h2>
+        <p class="text-center">
+          Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched
+          Personalized Service
+        </p>
+
+        <div class="flex gap-4">
+          <div class="bg-[#DDC7BB]">
+            <img src="figma/figma-Vector-Place.svg" alt="icons8-map-pin-96" />
+            <h3><strong>Expert Guidance</strong></h3>
+            <p>
+              Benefit from our team's seasoned expertise for a smooth buying experience
+            </p>
+          </div>
+          <div class="bg-[#DDC7BB]">
+            <img src="figma/figma-Vector-Place.svg" alt="icons8-map-pin-96" />
+            <h3><strong>Personalized Service</strong></h3>
+            <p>
+              Our services adapt to your unique needs, making your journey stress-free
+            </p>
+          </div>
+          <div class="bg-[#DDC7BB]">
+            <img src="figma/figma-Vector-Place.svg" alt="icons8-map-pin-96" />
+            <h3><strong>Transparent Process</strong></h3>
+            <p>Stay informed with our clear and honest approach to buying your home</p>
+          </div>
+          <div class="bg-[#DDC7BB]">
+            <img src="figma/figma-Vector-Place.svg" alt="icons8-map-pin-96" />
+            <h3><strong>Exceptional Support</strong></h3>
+            <p>
+              Providing peace of mind with our responsive and attentive customer service
+            </p>
+          </div>
+        </div>
+        <!--  Ende flex -->
+      </section>
+
+      <section class="font-montserrat p-4">
+        <!-- Section 5 Our popular residences L -->
+        <h2 class="text-center text-xl font-bold font-bold">Our Popular Residences</h2>
+
+        <div class="flex gap-4 text-sm">
+          <div class="flex-auto w-32 rounded-md bg-[#DDC7BB]" id="flexelement5a">
+                  <img class="w-full" src="figma/figma-house-10-2.png" alt="">
+<p class="w-full text-center">                    San Francisco, California
+</p>                  
+
+                  <!-- <div class="text-sm col-span-2" > -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+                  <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-teal-200"></div> -->
+
+                  <div class="text-center">4 Rooms</div>
+                  <div class="text-center" >3,500 sq ft</div>
+                  <button class="text-center">Sign Up</button>
+                  <div class="text-center">$2,500,000</div>
     
 
+                </div>
+          </div>
+          <!-- Ende flexelement5a-->
 
+          <div class="flex-auto bg-teal-500 w-32 rounded-md" id="flexelement5b">
+            <div class="grid grid-rows2 bg-[#DDC7BB]">
+              <img src="figma/figma-house-10-2.png" alt="" />
+
+              <p>2</p>
+            </div>
+          </div>
+
+          <div class="flex-auto bg-teal-500 w-32 rounded-md" id="flexelement5c">
+            <div class="grid grid-rows2 bg-[#DDC7BB]">
+              <img src="figma/figma-house-10-2.png" alt="" />
+
+              <p>3</p>
+            </div>
+          </div>
+        </div>
+        <!-- Ende flexcontainer -->
+      </section>
+
+      <section>
+        <!-- Section 6 What people say about us  I -->
+      </section>
+
+      <section>
+        <!-- Section 7 Do you have any questions? I -->
+      </section>
+    </main>
+
+    <footer>
+      <!-- I -->
+    </footer>
   </body>
 </html>
