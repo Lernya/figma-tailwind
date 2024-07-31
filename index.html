@@ -9,7 +9,7 @@
   <body>
     <!-- G -->
     <header
-      class="flex justify-between items-center p-4 text-[#2B1B12] font-bold text-lg bg-[#FEF7F2] font-montserrat w-full"
+      class="flex justify-between items-center p-4 text-[#2B1B12] font-bold text-lg bg-[#FEF7F2] font-montserrat w-full -mb-10"
     >
       <div class="p-6 flex-shrink-0"><img src="logo.png" alt="logo" /></div>
 
@@ -31,46 +31,56 @@
       <div class="flex space-x-4 items-center p-4 flex-shrink-0">
         <a href="#" class="p-4"><img src="search.svg" alt="Search" /></a>
         <a href="#" class="p-4"><img src="user.svg" alt="User" /></a>
-        <a href="#" class="p-4"><img src="HeaderSignup.svg" alt="Sign up" /></a>
+        <a href="#" class="p-6"><img src="HeaderSignup.svg" alt="Sign up" /></a>
         <!-- <a href="#" class="p-4"><button class="bg-[#2B1B12] text-white p-2 rounded hover:bg-[#DDC7BB]">Sign up</button></a> -->
       </div>
     </header>
 
     <main>
+      <!-- Section 1 HeroImg G -->
       <section
-        class="flex font-montserrat p-4 text-[#2B1B12] font-bold text-lg bg-[#FEF7F2]"
+        class="container max-w-full flex items-center font-montserrat text-[#2B1B12] bg-[#FEF7F2] p-4 -mt-10 -mb-12"
       >
-        <!-- Section 1 Haupthaus  G -->
-        <div>
-          <h1 class="flex font-montserrat p-4 text-6xl">
+        <!-- Left Content -->
+        <div class="flex flex-col space-y-4 p-6">
+          <h1 class="font-montserrat text-6xl font-bold -mt-10">
             Find Your <br />
             Dream Home
           </h1>
-
-          <p class="flex font-montserrat p-4">
+          <br />
+          <p class="text-lg font-bold">
             Explore our curated selection of exquisite <br />
-            properties metisculously tailored to your <br />
+            properties meticulously tailored to your <br />
             unique dream home vision
           </p>
-
-          <div class="flex font-montserrat p-4">
-            <a href="#" class="p-4"
-              ><img src="Sec2Signup.svg" alt="Sign up"
-            /></a>
-            <!-- <a href="#"><button class="bg-[#2B1B12] text-white p-2 rounded hover:bg-[#DDC7BB]">Sign up</button></a> -->
+          <br />
+          <br />
+          <div>
+            <a href="#">
+              <button
+                class="bg-[#2B1B12] text-white text-lg px-6 py-2 rounded hover:bg-[#DDC7BB]"
+              >
+                Sign up
+              </button>
+            </a>
           </div>
+        </div>
 
-          <div class="flex p-4 justify-start place-content-end">
-            <img src="hero image 1.png" alt="DreamHouse" />
-          </div>
+        <!-- Right Image -->
+        <div class="flex-1 flex justify-end p-6">
+          <img
+            src="hero image 1.png"
+            alt="DreamHouse"
+            class="max-w-full h-auto"
+          />
         </div>
       </section>
 
       <section
-        class="flex font-montserrat p-4 text-[#2B1B12] font-bold text-lg bg-[#DDC7BB;]"
+        class="container mx-auto justify-center rounded-lg font-montserrat text-[#2B1B12] font-bold text-lg bg-[#DDC7BB;]"
       >
         <!-- Section 2 Immobiliensuche, Filter G -->
-        <div class="flex space-x-4 items-center p-4 flex-shrink-0">
+        <div class="flex space-x-4 justify-center p-4 flex-shrink-0">
           <a href="#" class="p-4"><img src="Location.svg" alt="Location" /></a>
           <a href="#" class="p-4"><img src="Type.svg" alt="Type" /></a>
           <a href="#" class="p-4"><img src="PriceR.svg" alt="Price Range" /></a>
