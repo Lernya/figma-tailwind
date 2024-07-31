@@ -9,26 +9,87 @@
     </style>
     <title>Figma-Tailwind-CSS</title>
   </head>
-  <body class="font-montserrat text-[#2B1B12]">
-    <header>
-      <!-- G -->
-      <div class="logo"></div>
-      <nav></nav>
-      <nav>
-        <div class="suche"></div>
-        <div class="profil"></div>
-        <button></button>
+  <body>
+    <!-- G -->
+    <header
+      class="flex justify-between items-center p-4 text-[#2B1B12] font-bold text-lg bg-[#FEF7F2] font-montserrat w-full -mb-10"
+    >
+      <div class="p-6 flex-shrink-0"><img src="logo.png" alt="logo" /></div>
+
+      <nav class="flex flex-grow justify-center items-center">
+        <ul
+          class="flex space-x-8 text-[#2B1B12] font-bold font-montserrat text-lg"
+        >
+          <li><a href="#" class="hover:bg-[#DDC7BB] rounded p-4">Home</a></li>
+          <li>
+            <a href="#" class="hover:bg-[#DDC7BB] rounded p-4">Service</a>
+          </li>
+          <li><a href="#" class="hover:bg-[#DDC7BB] rounded p-4">Agents</a></li>
+          <li>
+            <a href="#" class="hover:bg-[#DDC7BB] rounded p-4">Contact</a>
+          </li>
+        </ul>
       </nav>
+
+      <div class="flex space-x-4 items-center p-4 flex-shrink-0">
+        <a href="#" class="p-4"><img src="search.svg" alt="Search" /></a>
+        <a href="#" class="p-4"><img src="user.svg" alt="User" /></a>
+        <a href="#" class="p-6"><img src="HeaderSignup.svg" alt="Sign up" /></a>
+        <!-- <a href="#" class="p-4"><button class="bg-[#2B1B12] text-white p-2 rounded hover:bg-[#DDC7BB]">Sign up</button></a> -->
+      </div>
     </header>
 
     <main>
-      <!-- <h1 class="text-center">Figma-Tailwind-CSS</h1> -->
-      <section>
-        <!-- Section 1 Haupthaus  G -->
+      <!-- Section 1 HeroImg G -->
+      <section
+        class="container max-w-full flex items-center font-montserrat text-[#2B1B12] bg-[#FEF7F2] p-4 -mt-10 -mb-12"
+      >
+        <!-- Left Content -->
+        <div class="flex flex-col space-y-4 p-6">
+          <h1 class="font-montserrat text-6xl font-bold -mt-10">
+            Find Your <br />
+            Dream Home
+          </h1>
+          <br />
+          <p class="text-lg font-bold">
+            Explore our curated selection of exquisite <br />
+            properties meticulously tailored to your <br />
+            unique dream home vision
+          </p>
+          <br />
+          <br />
+          <div>
+            <a href="#">
+              <button
+                class="bg-[#2B1B12] text-white text-lg px-6 py-2 rounded hover:bg-[#DDC7BB]"
+              >
+                Sign up
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex-1 flex justify-end p-6">
+          <img
+            src="hero image 1.png"
+            alt="DreamHouse"
+            class="max-w-full h-auto"
+          />
+        </div>
       </section>
 
-      <section>
+      <section
+        class="container mx-auto justify-center rounded-lg font-montserrat text-[#2B1B12] font-bold text-lg bg-[#DDC7BB;]"
+      >
         <!-- Section 2 Immobiliensuche, Filter G -->
+        <div class="flex space-x-4 justify-center p-4 flex-shrink-0">
+          <a href="#" class="p-4"><img src="Location.svg" alt="Location" /></a>
+          <a href="#" class="p-4"><img src="Type.svg" alt="Type" /></a>
+          <a href="#" class="p-4"><img src="PriceR.svg" alt="Price Range" /></a>
+          <a href="#" class="p-4"><img src="Sec2Signup.svg" alt="Sign up" /></a>
+          <!-- <a href="#" class="p-4"><button class="bg-[#2B1B12] text-white p-2 rounded hover:bg-[#DDC7BB]">Sign up</button></a> -->
+        </div>
       </section>
 
       <section class="font-montserrat p-4 p-8 md:p-16 box-border">
@@ -41,8 +102,9 @@
             <!-- <img class="rounded-md bg-teal-200" src="figma/figma-luxury_and_rich_home_exterior_side_view.png" alt="House"></div> -->
 
             <!-- <div class="bg-teal-200 w-full rounded-lg"> -->
-            <div class="w-full rounded-lg  drop-shadow-xl ">
-              <img class="w-full rounded-lg"
+            <div class="w-full rounded-lg drop-shadow-xl">
+              <img
+                class="w-full rounded-lg"
                 src="figma/figma-luxury_and_rich_home_exterior_side_view.png"
                 alt="House"
               />
@@ -50,20 +112,26 @@
           </div>
 
           <!-- <div id="grid-feldb1" class="bg-teal-200 box-border p-16 text-sm items-center"> -->
-            <div id="grid-feldb1" class="box-border lg p-8 xl:p-16 text-sm items-center">
-
+          <div
+            id="grid-feldb1"
+            class="box-border lg p-8 xl:p-16 text-sm items-center"
+          >
             <h2 class="text-left text-3xl font-bold font-bold my-3">
               We Help You To Find Your Dream Home
             </h2>
             <p class="text-base my-4">
-              From cozy cottages to luxurious estates, our dedicated team guides you
-              through every step of the journey, ensuring your dream home becomes a
-              reality
+              From cozy cottages to luxurious estates, our dedicated team guides
+              you through every step of the journey, ensuring your dream home
+              becomes a reality
             </p>
 
-            <div class="flex gap-8 p-8 mt-4 justify-between place-content-between">
+            <div
+              class="flex gap-8 p-8 mt-4 justify-between place-content-between"
+            >
               <!-- Dann in li -->
-              <p><strong class="block text-3xl">8K+</strong> Houses Available</p>
+              <p>
+                <strong class="block text-3xl">8K+</strong> Houses Available
+              </p>
               <p><strong class="block text-3xl">6K+</strong> Houses Sold</p>
               <p><strong class="block text-3xl">2K+</strong> Trusted Agents</p>
             </div>
@@ -78,61 +146,87 @@
         <!-- Section 4 Why choose us (inkl. Kaestchen) L -->
         <h2 class="text-center text-4xl font-bold p-4">Why Choose Us</h2>
         <div class="text-center mx-[20%]">
-          Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched
+          Elevating Your Home Buying Experience with Expertise, Integrity, and
+          Unmatched
           <span class="sm:whitespace-nowrap">Personalized Service</span>
         </div>
 
         <!-- <div class="flex gap-4 mt-8 text-sm"> -->
-          <!-- <div class="flex gap-4 mt-8 text-sm flex-wrap sm:flex-nowrap justify-items-center sm:justify-items-start"> -->
-            <div class="flex gap-4 mt-8 text-sm flex-wrap sm:flex-nowrap">
-
+        <!-- <div class="flex gap-4 mt-8 text-sm flex-wrap sm:flex-nowrap justify-items-center sm:justify-items-start"> -->
+        <div class="flex gap-4 mt-8 text-sm flex-wrap sm:flex-nowrap">
           <!-- <div class="bg-[#DDC7BB] p-4 drop-shadow-xl  rounded-lg"> -->
-            
-          <div class="bg-[#DDC7BB] p-4 drop-shadow-xl  rounded-lg basis-full sm:basis-1/2 md:basis-1/4">
+
+          <div
+            class="bg-[#DDC7BB] p-4 drop-shadow-xl rounded-lg basis-full sm:basis-1/2 md:basis-1/4"
+          >
             <img
-              class="bg-[#FBF5F1]  rounded-lg p-4 mb-4"
+              class="bg-[#FBF5F1] rounded-lg p-4 mb-4"
               src="figma/figma-Vector-Place.svg"
               alt="icons8-map-pin-96"
             />
-            <h3><strong class="font-montserrat my-4 text-md font-black">Expert Guidance</strong></h3>
+            <h3>
+              <strong class="font-montserrat my-4 text-md font-black"
+                >Expert Guidance</strong
+              >
+            </h3>
             <p class="font-montserrat my-3">
-              Benefit from our team's seasoned expertise for a smooth buying experience
+              Benefit from our team's seasoned expertise for a smooth buying
+              experience
             </p>
           </div>
-          <div class="bg-[#DDC7BB] p-4 drop-shadow-xl  rounded-lg basis-full sm:basis-1/2 md:basis-1/4">
+          <div
+            class="bg-[#DDC7BB] p-4 drop-shadow-xl rounded-lg basis-full sm:basis-1/2 md:basis-1/4"
+          >
             <img
-              class="bg-[#FBF5F1]  rounded-lg p-4 mb-4"
+              class="bg-[#FBF5F1] rounded-lg p-4 mb-4"
               src="figma/figma-Vector-icons8-registration-96-1.svg"
               alt="icons8-map-pin-96"
             />
-            <h3><strong class=" my-4 text-md font-black">Personalized Service</strong></h3>
-            <p class=" my-3">
-              Our services adapt to your unique needs, making your journey stress-free
+            <h3>
+              <strong class="my-4 text-md font-black"
+                >Personalized Service</strong
+              >
+            </h3>
+            <p class="my-3">
+              Our services adapt to your unique needs, making your journey
+              stress-free
             </p>
           </div>
-          <div class="bg-[#DDC7BB] p-4 drop-shadow-xl  rounded-lg basis-full sm:basis-1/2 md:basis-1/4">
+          <div
+            class="bg-[#DDC7BB] p-4 drop-shadow-xl rounded-lg basis-full sm:basis-1/2 md:basis-1/4"
+          >
             <img
-              class="bg-[#FBF5F1]  rounded-lg p-4 mb-4"
+              class="bg-[#FBF5F1] rounded-lg p-4 mb-4"
               src="figma/figma-Vector-icons8-clipboard-96-1.svg"
               alt="icons8-map-pin-96"
             />
-            <h3><strong class=" my-4 text-md font-black">Transparent Process</strong></h3>
-            <p class=" my-3">Stay informed with our clear and honest approach to buying your home</p>
+            <h3>
+              <strong class="my-4 text-md font-black"
+                >Transparent Process</strong
+              >
+            </h3>
+            <p class="my-3">
+              Stay informed with our clear and honest approach to buying your
+              home
+            </p>
           </div>
-          <div class="bg-[#DDC7BB] p-4 drop-shadow-xl  rounded-lg basis-full sm:basis-1/2 md:basis-1/4">
-
+          <div
+            class="bg-[#DDC7BB] p-4 drop-shadow-xl rounded-lg basis-full sm:basis-1/2 md:basis-1/4"
+          >
             <!-- <div class="bg-[#FBF5F1]  rounded-lg p-4">
-              <img class="  rotate-45" -->
+                  <img class="  rotate-45" -->
             <div>
-            <!-- <img class="bg-[#FBF5F1]  rounded-lg p-4  rotate-45"               -->
-            <img class="bg-[#FBF5F1]  rounded-lg p-4 mb-4"              
-            src="figma/figma-Vector-icons8-helping-hand-96-1-45degr.svg"
-              alt="icons8-map-pin-96"
-            />
-          </div>
+              <!-- <img class="bg-[#FBF5F1]  rounded-lg p-4  rotate-45"               -->
+              <img
+                class="bg-[#FBF5F1] rounded-lg p-4 mb-4"
+                src="figma/figma-Vector-icons8-helping-hand-96-1-45degr.svg"
+                alt="icons8-map-pin-96"
+              />
+            </div>
             <h3><strong>Exceptional Support</strong></h3>
             <p class="my-3">
-              Providing peace of mind with our responsive and attentive customer service
+              Providing peace of mind with our responsive and attentive customer
+              service
             </p>
           </div>
         </div>
@@ -145,76 +239,148 @@
           Our Popular Residences
         </h2>
 
-        <div class="md:flex md:items-stretch gap-4 md:gap-8 text-sm rounded-lg mt-4 "><!-- flex-container 3 -->
+        <div
+          class="md:flex md:items-stretch gap-4 md:gap-8 text-sm rounded-lg mt-4"
+        >
+          <!-- flex-container 3 -->
 
-          <div class="md:flex-auto md:w-32 rounded-lg bg-teal-500 drop-shadow-xl" id="flexelement5a">
-
+          <div
+            class="md:flex-auto md:w-32 rounded-lg bg-teal-500 drop-shadow-xl"
+            id="flexelement5a"
+          >
             <!-- <div class="grid grid-rows2 bg-[#DDC7BB] rounded-lg place-items-stretch"> -->
-            <div class="grid bg-[#DDC7BB] rounded-lg  place-items-stretch">
+            <div class="grid bg-[#DDC7BB] rounded-lg place-items-stretch">
+              <!-- Reihe 1 --><img
+                class="w-full rounded-t-lg"
+                src="figma/figma-house-10-2.png"
+                alt=""
+              />
 
-            <!-- Reihe 1 --><img class="w-full rounded-t-lg" src="figma/figma-house-10-2.png" alt="" />
-
-            <!-- Reihe 2 --><div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 content-center place-items-stretch  items-center">
-
-              <!-- Icon-Versuch 1 mit float -->
+              <!-- Reihe 2 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 content-center place-items-stretch items-center"
+              >
+                <!-- Icon-Versuch 1 mit float -->
                 <div class="md:col-span-2 w-full text-center font-bold">
-                  <img class="w-[1em] float-left" src="figma/figma-location-icons8-location-96.svg" alt="">San Francisco, California
+                  <img
+                    class="w-[1em] float-left"
+                    src="figma/figma-location-icons8-location-96.svg"
+                    alt=""
+                  />San Francisco, California
                 </div>
-    
-                <div class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')] align-middle">4 Rooms</div>
-                <div class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')] align-middle">3,500 sq ft</div>
-                <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3">Sign Up</button>
-                <div class="text-center font-black">$2,500,000</div>
 
-            </div><!-- ende Reihe 2 -->
-          </div>
+                <div
+                  class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')] align-middle"
+                >
+                  4 Rooms
+                </div>
+                <div
+                  class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')] align-middle"
+                >
+                  3,500 sq ft
+                </div>
+                <button
+                  class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3"
+                >
+                  Sign Up
+                </button>
+                <div class="text-center font-black">$2,500,000</div>
+              </div>
+              <!-- ende Reihe 2 -->
+            </div>
           </div>
 
           <!-- Ende flexelement5a-->
 
-          <div class="md:flex-auto bg-teal-500 md:w-32 rounded-lg drop-shadow-xl" id="flexelement5b">
-
+          <div
+            class="md:flex-auto bg-teal-500 md:w-32 rounded-lg drop-shadow-xl"
+            id="flexelement5b"
+          >
             <div class="grid bg-[#DDC7BB] rounded-lg place-items-stretch">
-              <!-- Reihe 1 --><img class="w-full rounded-t-lg" src="figma/figma-house-image-2.png" alt="" />
-              
-             
-            <!-- Reihe 2 --><div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-2 items-center ">
-              <!-- Ort mit rein ins Grid, weil sonst zu nach an den Rand und außerdem überzieht Bildbreite -->
-              <!-- <p class="w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4">Beverly Hills, California</p> -->
-              <!-- Icon-Versuch 2 mit before -->
-              <div class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold">Beverly Hills, California</div>
+              <!-- Reihe 1 --><img
+                class="w-full rounded-t-lg"
+                src="figma/figma-house-image-2.png"
+                alt=""
+              />
 
-                <div class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')] align-middle">3 Rooms</div>
-                <div class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')] align-middle">1,500 sq ft</div>
-                <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3">Sign Up</button>
+              <!-- Reihe 2 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 p-2 items-center"
+              >
+                <!-- Ort mit rein ins Grid, weil sonst zu nach an den Rand und außerdem überzieht Bildbreite -->
+                <!-- <p class="w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4">Beverly Hills, California</p> -->
+                <!-- Icon-Versuch 2 mit before -->
+                <div
+                  class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold"
+                >
+                  Beverly Hills, California
+                </div>
+
+                <div
+                  class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')] align-middle"
+                >
+                  3 Rooms
+                </div>
+                <div
+                  class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')] align-middle"
+                >
+                  1,500 sq ft
+                </div>
+                <button
+                  class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3"
+                >
+                  Sign Up
+                </button>
                 <div class="text-center font-black">$850,000</div>
               </div>
-
             </div>
           </div>
 
-          <div class="md:flex-auto bg-teal-500 md:w-32 rounded-lg drop-shadow-xl" id="flexelement5c">
-
+          <div
+            class="md:flex-auto bg-teal-500 md:w-32 rounded-lg drop-shadow-xl"
+            id="flexelement5c"
+          >
             <div class="grid bg-[#DDC7BB] rounded-lg">
               <!-- <div class="grid grid-rows2 bg-[#DDC7BB] rounded-lg  place-items-stretch"> -->
 
-              <!-- Reihe 1 --><img class="w-full rounded-t-lg" src="figma/figma-house-21-2.png" alt="" />
+              <!-- Reihe 1 --><img
+                class="w-full rounded-t-lg"
+                src="figma/figma-house-21-2.png"
+                alt=""
+              />
 
-              <!-- Reihe 2 --><div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 items-center ">
-
+              <!-- Reihe 2 -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 items-center"
+              >
                 <!-- Icon-Versuch 2 mit before -->
-                <div class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold">Palo Alto, California</div>
+                <div
+                  class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold"
+                >
+                  Palo Alto, California
+                </div>
 
                 <!-- <div class="w-full text-center mt-4">
-                  <img class="w-[1em] float-left" src="figma/figma-location-icons8-location-96.svg" alt="">
-                  Palo Alto, California</div> -->
-  
-                <div class="text-center  before:content-[url('figma/figma-rooms-icons8-bed-96.svg')]">6 Rooms</div>
-                <div class="text-center  before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')]">4,000 sq ft</div>
-                <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3">Sign Up</button>
+                      <img class="w-[1em] float-left" src="figma/figma-location-icons8-location-96.svg" alt="">
+                      Palo Alto, California</div> -->
+
+                <div
+                  class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')]"
+                >
+                  6 Rooms
+                </div>
+                <div
+                  class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')]"
+                >
+                  4,000 sq ft
+                </div>
+                <button
+                  class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3"
+                >
+                  Sign Up
+                </button>
                 <div class="text-center font-black">$3,700,000</div>
               </div>
-  
             </div>
           </div>
         </div>
