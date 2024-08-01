@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
     <style>
       /* @tailwind base; */ /* Preflight will be injected here, siehe https://tailwindcss.com/docs/preflight */
     </style>
     <title>Figma-Tailwind-CSS</title>
   </head>
   <body>
+
     <!-- G -->
     <header
       class="flex justify-between items-center p-4 text-[#2B1B12] font-bold text-lg bg-[#FEF7F2] font-montserrat w-full -mb-10"
@@ -92,11 +101,11 @@
         </div>
       </section>
 
-      <section class="font-montserrat p-4 p-8 md:p-16 box-border">
-        <!-- Section 3 We help you to find.. L -->
+      <section class="font-montserrat p-4 p-8 md:p-16 box-border bg-white">
+        <!-- Section 3 We help you to find. seg42 L -->
 
         <!-- <div class="grid grid-cols-1 md:grid-cols-2 bg-teal-100 gap-4"> -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2">
           <div id="grid-feld-a1" class="box-border w-full rounded-lgs">
             <!-- <p>Mit Bildplatzhalter funktioniert es, mit Klassen in img direkt bisher nicht</p> -->
             <!-- <img class="rounded-md bg-teal-200" src="figma/figma-luxury_and_rich_home_exterior_side_view.png" alt="House"></div> -->
@@ -192,37 +201,35 @@
               stress-free
             </p>
           </div>
-          <div
-            class="bg-[#DDC7BB] p-4 drop-shadow-xl rounded-lg basis-full sm:basis-1/2 md:basis-1/4"
-          >
+          <div class="bg-[#DDC7BB] p-4 drop-shadow-xl  rounded-lg basis-full sm:basis-1/2 md:basis-1/4">
+            <!-- h-[7em] w-[7em]  -->
             <img
-              class="bg-[#FBF5F1] rounded-lg p-4 mb-4"
+              class="bg-[#FBF5F1]  rounded-lg p-4 mb-4 "
               src="figma/figma-Vector-icons8-clipboard-96-1.svg"
               alt="icons8-map-pin-96"
             />
-            <h3>
-              <strong class="my-4 text-md font-black"
-                >Transparent Process</strong
-              >
-            </h3>
-            <p class="my-3">
-              Stay informed with our clear and honest approach to buying your
-              home
-            </p>
+            <!-- <div class="mr-2 bg-[#FBF5F1]  rounded-lg p-4 mb-4 inline-block h-[6em]">
+              <i class="fa-solid fas fa-handshake  text-5xl -rotate-45"></i>
+            </div> -->
+            <h3><strong class=" my-4 text-md font-black">Transparent Process</strong></h3>
+            <p class=" my-3">Stay informed with our clear and honest approach to buying your home</p>
           </div>
           <div
             class="bg-[#DDC7BB] p-4 drop-shadow-xl rounded-lg basis-full sm:basis-1/2 md:basis-1/4"
           >
             <!-- <div class="bg-[#FBF5F1]  rounded-lg p-4">
-                  <img class="  rotate-45" -->
+              SVG <img class="  rotate-45" -->
+            <!-- <img class="bg-[#FBF5F1]  rounded-lg p-4  rotate-45"                        -->
             <div>
-              <!-- <img class="bg-[#FBF5F1]  rounded-lg p-4  rotate-45"               -->
-              <img
-                class="bg-[#FBF5F1] rounded-lg p-4 mb-4"
-                src="figma/figma-Vector-icons8-helping-hand-96-1-45degr.svg"
+              <img class="bg-[#FBF5F1]  rounded-lg p-4 mb-4"              
+              src="figma/figma-Vector-icons8-helping-hand-96-1-45degr.svg"
                 alt="icons8-map-pin-96"
               />
             </div>
+<!-- Neu mit Font Awesome             -->
+            <!-- <div class=" bg-[#FBF5F1]  rounded-lg p-4 mb-4 inline-block h-[7em] w-[7em] align-middle">
+            <i class="fa-solid fas fa-handshake  text-5xl -rotate-45"></i>
+          </div> -->
             <h3><strong>Exceptional Support</strong></h3>
             <p class="my-3">
               Providing peace of mind with our responsive and attentive customer
@@ -244,10 +251,10 @@
         >
           <!-- flex-container 3 -->
 
-          <div
-            class="md:flex-auto md:w-32 rounded-lg bg-teal-500 drop-shadow-xl"
-            id="flexelement5a"
-          >
+          <!-- Zum Testen bg-teal-500 bg-[#d6c0b4]  
+            // Lösungsansatz für Platzierung auf gleicher Höhe wahrscheinlich Subgrid -->
+          <div class="bg-[#d6c0b4] md:flex-auto md:w-32 rounded-lg  drop-shadow-xl" id="flexelement5a">
+
             <!-- <div class="grid grid-rows2 bg-[#DDC7BB] rounded-lg place-items-stretch"> -->
             <div class="grid bg-[#DDC7BB] rounded-lg place-items-stretch">
               <!-- Reihe 1 --><img
@@ -256,34 +263,27 @@
                 alt=""
               />
 
-              <!-- Reihe 2 -->
-              <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 content-center place-items-stretch items-center"
-              >
-                <!-- Icon-Versuch 1 mit float -->
-                <div class="md:col-span-2 w-full text-center font-bold">
-                  <img
-                    class="w-[1em] float-left"
-                    src="figma/figma-location-icons8-location-96.svg"
-                    alt=""
-                  />San Francisco, California
-                </div>
+            <!-- Reihe 2 --><div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 items-center">
 
-                <div
-                  class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')] align-middle"
-                >
-                  4 Rooms
-                </div>
-                <div
-                  class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')] align-middle"
-                >
-                  3,500 sq ft
-                </div>
-                <button
-                  class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3"
-                >
-                  Sign Up
-                </button>
+              <!-- Icon-Versuch 1 mit float -->
+                <!-- <div class="md:col-span-2 w-full text-center font-bold">
+                  <img class="w-[1em] float-left" src="figma/figma-location-icons8-location-96.svg" alt="">San Francisco, California
+                </div> -->
+    <div class="md:col-span-2 w-full text-center md:text-left font-bold"><i class="fa-solid fa-location-dot mr-2 text-xl"></i>San Francisco, California</div>
+
+    <!-- Das Bett-Icon und vielleicht auch das Maßband im Figma-Wireframe sind wohl von Bootstrap... Hier jetzt einheitlich mit Font Awesome -->
+                <div class="text-center"><i class="fa-solid fas fa-bed mr-2"></i>4 Rooms</div>
+                <div class="text-center"><i class="fa-solid fas fa-tape mr-2"></i>3,500 sq ft</div>
+<!-- Meine Version:
+                <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3">Sign Up</button> -->
+<!-- Anpassung an Gabriel -->
+                <!-- <a href="#"><button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded p-2 hover:bg-[#DDC7BB]">Sign Up</button></a> -->
+                <!-- Bin fuer p-3 no -->
+                <!-- <a href="#"><button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-2 hover:text-[#2B1B12] hover:bg-[#FBF5F1]">Sign Up</button></a> -->
+                <!-- <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-2 hover:text-[#2B1B12] hover:bg-[#FBF5F1]">Sign Up</button> -->
+                <a class="text-center font-semibold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-2 hover:text-[#2B1B12] hover:bg-[#FBF5F1]"    
+                href="#"><button>Sign Up</button></a>
+                
                 <div class="text-center font-black">$2,500,000</div>
               </div>
               <!-- ende Reihe 2 -->
@@ -291,55 +291,34 @@
           </div>
 
           <!-- Ende flexelement5a-->
+          <div class="bg-[#d6c0b4] md:flex-auto md:w-32 rounded-lg drop-shadow-xl" id="flexelement5b">
 
-          <div
-            class="md:flex-auto bg-teal-500 md:w-32 rounded-lg drop-shadow-xl"
-            id="flexelement5b"
-          >
             <div class="grid bg-[#DDC7BB] rounded-lg place-items-stretch">
-              <!-- Reihe 1 --><img
-                class="w-full rounded-t-lg"
-                src="figma/figma-house-image-2.png"
-                alt=""
-              />
+              <!-- Reihe 1 --><img class="w-full rounded-t-lg" src="figma/figma-house-image-2.png" alt="" />
+              
+             
+            <!-- Reihe 2 --><div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 items-center ">
+              <!-- Ort mit rein ins Grid, weil sonst zu nach an den Rand und außerdem überzieht Bildbreite -->
+              <!-- <p class="w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4">Beverly Hills, California</p> -->
+              <!-- Icon-Versuch 2 mit before -->
+              <!-- <div class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold">Beverly Hills, California</div> -->
+              <div class="md:col-span-2 w-full text-center md:text-left font-bold"><i class="fa-solid fa-location-dot mr-2  text-xl"></i>Beverly Hills, California</div>
 
-              <!-- Reihe 2 -->
-              <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-4 p-2 items-center"
-              >
-                <!-- Ort mit rein ins Grid, weil sonst zu nach an den Rand und außerdem überzieht Bildbreite -->
-                <!-- <p class="w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4">Beverly Hills, California</p> -->
-                <!-- Icon-Versuch 2 mit before -->
-                <div
-                  class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold"
-                >
-                  Beverly Hills, California
-                </div>
-
-                <div
-                  class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')] align-middle"
-                >
-                  3 Rooms
-                </div>
-                <div
-                  class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')] align-middle"
-                >
-                  1,500 sq ft
-                </div>
-                <button
-                  class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3"
-                >
-                  Sign Up
-                </button>
+                <!-- <div class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')] align-middle"><i class="fa-solid fa-bed-dot m-2"></i>3 Rooms</div> -->
+                <div class="text-center"><i class="fa-solid fas fa-bed mr-2"></i>3 Rooms</div>
+                <!-- <div class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')] align-middle">1,500 sq ft</div> -->
+                <div class="text-center"><i class="fa-solid fas fa-tape mr-2"></i>1,500 sq ft</div>
+                <!-- <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3">Sign Up</button> -->
+                <a class="text-center font-semibold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-2 hover:text-[#2B1B12] hover:bg-[#FBF5F1]"    
+                href="#"><button>Sign Up</button></a>
+                
                 <div class="text-center font-black">$850,000</div>
               </div>
             </div>
           </div>
 
-          <div
-            class="md:flex-auto bg-teal-500 md:w-32 rounded-lg drop-shadow-xl"
-            id="flexelement5c"
-          >
+          <div class="bg-[#d6c0b4] md:flex-auto md:w-32 rounded-lg drop-shadow-xl" id="flexelement5c">
+
             <div class="grid bg-[#DDC7BB] rounded-lg">
               <!-- <div class="grid grid-rows2 bg-[#DDC7BB] rounded-lg  place-items-stretch"> -->
 
@@ -354,31 +333,18 @@
                 class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 items-center"
               >
                 <!-- Icon-Versuch 2 mit before -->
-                <div
-                  class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold"
-                >
-                  Palo Alto, California
-                </div>
+                <!-- <div class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold">Palo Alto, California</div> -->
+                <div class="md:col-span-2 w-full text-center md:text-left font-bold"><i class="fa-solid fa-location-dot mr-2  text-xl"></i>Palo Alto, California</div>
+
 
                 <!-- <div class="w-full text-center mt-4">
-                      <img class="w-[1em] float-left" src="figma/figma-location-icons8-location-96.svg" alt="">
-                      Palo Alto, California</div> -->
-
-                <div
-                  class="text-center before:content-[url('figma/figma-rooms-icons8-bed-96.svg')]"
-                >
-                  6 Rooms
-                </div>
-                <div
-                  class="text-center before:content-[url('figma/figma-size-icons8-sewing-tape-measure-96.svg')]"
-                >
-                  4,000 sq ft
-                </div>
-                <button
-                  class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3"
-                >
-                  Sign Up
-                </button>
+                  <img class="w-[1em] float-left" src="figma/figma-location-icons8-location-96.svg" alt="">
+                  Palo Alto, California</div> -->
+  
+                <div class="text-center"><i class="fa-solid fas fa-bed mr-2"></i>6 Rooms</div>
+                <div class="text-center"><i class="fa-solid fas fa-tape mr-2"></i>4,000 sq ft</div>
+                <a class="text-center font-semibold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-2 hover:text-[#2B1B12] hover:bg-[#FBF5F1]"    
+                href="#"><button>Sign Up</button></a>
                 <div class="text-center font-black">$3,700,000</div>
               </div>
             </div>
