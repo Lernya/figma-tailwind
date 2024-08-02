@@ -11,13 +11,15 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-
     <style>
-      /* @tailwind base; */ /* Preflight will be injected here, siehe https://tailwindcss.com/docs/preflight */
-    </style>
+      /* Wird hier nicht gebraucht. @tailwind base; */ /* Preflight will be injected here, siehe https://tailwindcss.com/docs/preflight */
+      </style>
+
     <title>Figma-Tailwind-CSS</title>
   </head>
-  <body class="bg-[#FFFFFF]">
+  <!-- Bilder sind zum Teil sicherheitshalber im Stammverzeichnis, weil anders Ansicht noch nicht zuverlaessig. Fragen offen. -->
+  <!-- Offene Frage zum Font: Eingetragen ist Montserrat, aber auch ueberall so sichtbar? Etwas ist da seltsam -->
+    <body class="bg-[#FFFFFF]">
 
     <!-- G -->
     <header
@@ -101,10 +103,10 @@
         </div>
       </section>
 
+      <!-- Zum Testen teal-*,  bg-teal-500, bg-teal-200, bg-[#d6c0b4]   -->
       <section class="font-montserrat p-4 p-8 md:p-16 box-border bg-white">
-        <!-- Section 3 We help you to find. seg42 L -->
+        <!-- Section 3 We help you to find.  L -->
 
-        <!-- <div class="grid grid-cols-1 md:grid-cols-2 bg-teal-100 gap-4"> -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2">
           <div id="grid-feld-a1" class="box-border w-full rounded-lgs">
             <!-- <p>Mit Bildplatzhalter funktioniert es, mit Klassen in img direkt bisher nicht</p> -->
@@ -163,7 +165,7 @@
         <!-- <div class="flex gap-4 mt-8 text-sm"> -->
         <!-- <div class="flex gap-4 mt-8 text-sm flex-wrap sm:flex-nowrap justify-items-center sm:justify-items-start"> -->
         <div class="flex gap-4 mt-8 text-sm flex-wrap sm:flex-nowrap">
-          <!-- <div class="bg-[#DDC7BB] p-4 drop-shadow-xl  rounded-lg"> -->
+          <!-- <div class="bg-[#DDC7BB] p-4 drop-shadow-xl  rounded-lg"> auch unten nur Experimente -->
 
           <div
             class="bg-[#DDC7BB] p-4 drop-shadow-xl rounded-lg basis-full sm:basis-1/2 md:basis-1/4"
@@ -226,10 +228,10 @@
                 alt="icons8-map-pin-96"
               />
             </div>
-<!-- Neu mit Font Awesome             -->
+            <!-- Neu mit Font Awesome             -->
             <!-- <div class=" bg-[#FBF5F1]  rounded-lg p-4 mb-4 inline-block h-[7em] w-[7em] align-middle">
-            <i class="fa-solid fas fa-handshake  text-5xl -rotate-45"></i>
-          </div> -->
+                  <i class="fa-solid fas fa-handshake  text-5xl -rotate-45"></i>
+                 </div> -->
             <h3><strong>Exceptional Support</strong></h3>
             <p class="my-3">
               Providing peace of mind with our responsive and attentive customer
@@ -257,11 +259,7 @@
 
             <!-- <div class="grid grid-rows2 bg-[#DDC7BB] rounded-lg place-items-stretch"> -->
             <div class="grid bg-[#DDC7BB] rounded-lg place-items-stretch">
-              <!-- Reihe 1 --><img
-                class="w-full rounded-t-lg"
-                src="figma/figma-house-10-2.png"
-                alt=""
-              />
+            <!-- Reihe 1 --><img class="w-full rounded-t-lg" src="figma/figma-house-10-2.png" alt="" />
 
             <!-- Reihe 2 --><div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 items-center">
 
@@ -269,16 +267,15 @@
                 <!-- <div class="md:col-span-2 w-full text-center font-bold">
                   <img class="w-[1em] float-left" src="figma/figma-location-icons8-location-96.svg" alt="">San Francisco, California
                 </div> -->
-    <div class="md:col-span-2 w-full text-center md:text-left font-bold"><i class="fa-solid fa-location-dot mr-2 text-xl"></i>San Francisco, California</div>
+              <div class="md:col-span-2 w-full text-center md:text-left font-bold"><i class="fa-solid fa-location-dot mr-2 text-xl"></i>San Francisco, California</div>
 
-    <!-- Das Bett-Icon und vielleicht auch das Maßband im Figma-Wireframe sind wohl von Bootstrap... Hier jetzt einheitlich mit Font Awesome -->
+              <!-- Das Bett-Icon und vielleicht auch das Maßband im Figma-Wireframe sind wohl von Bootstrap... Hier jetzt einheitlich mit Font Awesome -->
                 <div class="text-center"><i class="fa-solid fas fa-bed mr-2"></i>4 Rooms</div>
                 <div class="text-center"><i class="fa-solid fas fa-tape mr-2"></i>3,500 sq ft</div>
-<!-- Meine Version:
-                <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3">Sign Up</button> -->
-<!-- Anpassung an Gabriel -->
-                <!-- <a href="#"><button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded p-2 hover:bg-[#DDC7BB]">Sign Up</button></a> -->
-                <!-- Bin fuer p-3 no -->
+
+                <!-- Anpassung an Gabriels Code, dann Gruppe, Test-Varianten, Details abgesprochen -->
+              <!-- <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-3">Sign Up</button> -->
+              <!-- <a href="#"><button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded p-2 hover:bg-[#DDC7BB]">Sign Up</button></a> -->
                 <!-- <a href="#"><button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-2 hover:text-[#2B1B12] hover:bg-[#FBF5F1]">Sign Up</button></a> -->
                 <!-- <button class="text-center font-bold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-2 hover:text-[#2B1B12] hover:bg-[#FBF5F1]">Sign Up</button> -->
                 <a class="text-center font-semibold text-[#FFFFFF] bg-[#2B1B12] rounded-md p-2 hover:text-[#2B1B12] hover:bg-[#FBF5F1]"    
@@ -322,20 +319,12 @@
             <div class="grid bg-[#DDC7BB] rounded-lg">
               <!-- <div class="grid grid-rows2 bg-[#DDC7BB] rounded-lg  place-items-stretch"> -->
 
-              <!-- Reihe 1 --><img
-                class="w-full rounded-t-lg"
-                src="figma/figma-house-21-2.png"
-                alt=""
-              />
+              <!-- Reihe 1 --><img class="w-full rounded-t-lg" src="figma/figma-house-21-2.png" alt="" />
 
-              <!-- Reihe 2 -->
-              <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 items-center"
-              >
+              <!-- Reihe 2 --><div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 items-center" >
                 <!-- Icon-Versuch 2 mit before -->
                 <!-- <div class="md:col-span-2 w-full text-center before:content-[url('figma/figma-location-icons8-location-96.svg')] before:inline-block mt-4 font-bold">Palo Alto, California</div> -->
                 <div class="md:col-span-2 w-full text-center md:text-left font-bold"><i class="fa-solid fa-location-dot mr-2  text-xl"></i>Palo Alto, California</div>
-
 
                 <!-- <div class="w-full text-center mt-4">
                   <img class="w-[1em] float-left" src="figma/figma-location-icons8-location-96.svg" alt="">
